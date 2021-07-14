@@ -1,0 +1,194 @@
+:root {
+  --black-color: #030303;
+  --white-color: #fff;
+  --red-color: #ff1744;
+  --blue-color: #1e88e5;
+  --grey-color: #606060;
+  /* font */
+  --large-size: 1.2rem;
+  --basic-size: 1rem;
+  --small-size: 0.75rem;
+}
+
+body {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--black-color);
+  padding: 10px;
+}
+
+header button {
+  color: var(--white-color);
+  font-size: var(--basic-size);
+}
+
+.left a {
+  font-weight: 800;
+}
+
+.fa-youtube {
+  color: var(--red-color);
+}
+
+.right i {
+  margin: 0 5px;
+}
+
+.video {
+  /* height: 210px; */
+  position: sticky;
+  top: 0px;
+}
+
+.video img {
+  width: 100%;
+}
+
+.video_info {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px;
+}
+
+.video_info .hashtag {
+  color: var(--blue-color);
+  font-size: var(--small-size);
+}
+
+.title_container {
+  margin-top: 10px;
+}
+
+.video_info .title {
+  display: flex;
+  align-items: baseline;
+  font-size: var(--basic-size);
+}
+
+.video_info .viewers {
+  font-size: var(--small-size);
+  color: var(--grey-color);
+}
+
+.video_info .title {
+  font-size: var(--basic-size);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.video_info .owner,
+.viewers {
+  font-size: var(--small-size);
+  color: var(--grey-color);
+}
+
+.icon_list {
+  display: flex;
+  justify-content: space-around;
+  color: var(--grey-color);
+}
+
+.icon_list .icon_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon_list .icon_item button {
+  font-size: var(--large-size);
+}
+
+.icon_list .icon_item .text {
+  font-size: var(--small-size);
+}
+
+.video_owner {
+  display: flex;
+  padding: 10px;
+}
+
+.video_owner .avatar {
+  width: 35px;
+  height: 50px;
+}
+
+.video_owner img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.video_owner .user_info {
+  margin-left: 10px;
+}
+
+.video_owner .user_info .user {
+  font-size: var(--basic-size);
+}
+
+.video_owner .user_info .subscribe {
+  font-size: var(--small-size);
+  color: var(--grey-color);
+}
+
+.subscribe_btn {
+  color: var(--red-color);
+  /* 맨끝으로 붙어야하는데,,,,,, */
+}
+
+
+.video_list {
+  display: flex;
+  flex-direction: column;
+}
+
+.video_list .text {
+  color: var(--grey-color);
+  font-size: var(--basic-size);
+  padding-left: 10px;
+}
+
+.video_item {
+  display: flex;
+  padding: 10px;
+  position: relative;
+}
+
+.video_item img {
+  width: 180px;
+  height: 100px;
+}
+
+.video_item .more {
+  align-self: baseline;
+  position: absolute;
+  top: 16px;
+  right: 2px;
+}
+
+/* position: absolute이면 fixed설정한것들이 다 뜨게됨 */
