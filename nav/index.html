@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>navigation</title>
+  <link rel="stylesheet" href="./nav.css">
+  <script src="https://kit.fontawesome.com/a83d827437.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <nav>
+    <div class="nav_title">
+      <i class="fab fa-accusoft"></i>
+      <a href="">TODAY NUT</a>
+    </div>
+    <ul class="nav_menu">
+      <li><a href="">아몬드</a></li>
+      <li><a href="">캐슈넛</a></li>
+      <li><a href="">호두</a></li>
+      <li><a href="">설타나</a></li>
+      <li><a href="">푸룬</a></li>
+    </ul>
+    <ul class="nav_share">
+      <li><i class="fab fa-twitter"></i></li>
+      <li><i class="fab fa-facebook"></i></li>
+    </ul>
+  </nav>
+
+  <div class="nav_icon">
+    <i class="fas fa-bars"></i>
+  </div>
+
+</body>
+<script>
+  document.querySelector('.nav_icon').addEventListener('click', function () {
+    const menu = document.querySelector('.nav_menu');
+    const share = document.querySelector('.nav_share');
+    console.log(menu.classList)
+    menu.classList.toggle('show');
+    share.classList.toggle('show');
+
+  });
+</script>
+
+</html>
