@@ -223,5 +223,9 @@ video {
   .all_info {
     flex-direction: row;
   }
+
+  .metaAndOwner, .next_video {
+    flex-basis: 50%;
+  }
 }
 
