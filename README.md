@@ -2,4 +2,4 @@
 https://juuuuuuuuuuuuuu.github.io/markup/
 
 ### wireframe
-https://github.com/juuuuuuuuuuuuuu/markup/tree/master/youtube2/youtube.jpg
+![youtube](https://user-images.githubusercontent.com/30399546/126141771-c4973648-7c6d-44fd-a24b-7279559e123e.jpg)
