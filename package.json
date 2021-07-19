@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/juuuuuuuuuuuuuu/markup/issues"
   },
-  "homepage": "https://github.com/juuuuuuuuuuuuuu/markup#readme"
+  "homepage": "https://juuuuuuuuuuuuuu.github.io/markup/youtube/",
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
 }
