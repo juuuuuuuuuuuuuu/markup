@@ -10,8 +10,11 @@
   --small-size: 0.75rem;
 }
 
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
 }
 
 p {
@@ -23,13 +26,14 @@ ul {
   padding: 0;
 }
 
-button {
+button, button:focus {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   padding: 0;
   border: 0;
   outline: 0;
+  cursor: pointer;
   background-color: transparent;
 }
 
@@ -58,16 +62,20 @@ header button {
 }
 
 .video {
-  /* height: 210px; */
   position: sticky;
   top: 0px;
+  background-color: var(--black-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.video img {
+video {
+  max-width: 1000px;
   width: 100%;
 }
 
-.video_info {
+section .video_info {
   display: flex;
   flex-direction: column;
   padding: 5px 10px;
@@ -82,10 +90,14 @@ header button {
   margin-top: 10px;
 }
 
-.video_info .title {
+.title_container .title {
   display: flex;
-  align-items: baseline;
   font-size: var(--basic-size);
+  justify-content: space-between;
+}
+
+.title_container button {
+  align-self: baseline;
 }
 
 .video_info .viewers {
@@ -93,7 +105,7 @@ header button {
   color: var(--grey-color);
 }
 
-.video_info .title {
+.title_container .text {
   font-size: var(--basic-size);
   overflow: hidden;
   text-overflow: ellipsis;
@@ -130,21 +142,27 @@ header button {
 
 .video_owner {
   display: flex;
+  justify-content: space-between;
   padding: 10px;
-}
-
-.video_owner .avatar {
-  width: 35px;
-  height: 50px;
+  margin: 10px 0;
+  border-top: 1px solid var(--grey-color);
+  border-bottom: 1px solid var(--grey-color);
 }
 
 .video_owner img {
-  width: 100%;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
 }
 
 .video_owner .user_info {
-  margin-left: 10px;
+  display: flex;
+}
+
+.video_owner .user_info .meta {
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .video_owner .user_info .user {
@@ -158,13 +176,13 @@ header button {
 
 .subscribe_btn {
   color: var(--red-color);
-  /* 맨끝으로 붙어야하는데,,,,,, */
 }
 
 
 .video_list {
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
 }
 
 .video_list .text {
@@ -176,19 +194,42 @@ header button {
 .video_item {
   display: flex;
   padding: 10px;
-  position: relative;
+}
+
+.video_item .item {
+  flex-basis: 35%;
 }
 
 .video_item img {
-  width: 180px;
-  height: 100px;
+  width: 100%;
+}
+
+.video_item .video_info {
+  flex-basis: 60%;
+  padding-left: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: flex;
+  flex-direction: column;
 }
 
 .video_item .more {
-  align-self: baseline;
-  position: absolute;
-  top: 16px;
-  right: 2px;
+  flex-basis: 5%;
+  align-self: flex-start;
+  padding-top: 5px;
 }
 
-/* position: absolute이면 fixed설정한것들이 다 뜨게됨 */
+.infoAndList {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .infoAndList {
+    flex-direction: row;
+  }
+}
+

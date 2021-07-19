@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,12 @@
   <script src="https://kit.fontawesome.com/a83d827437.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <title>youtube</title>
 </head>
+
 <body>
+  <!-- 헤더 -->
   <header>
     <div class="left">
       <button><i class="fab fa-youtube"></i></button>
@@ -23,118 +26,147 @@
     </div>
   </header>
 
+  <!-- 비디오 -->
   <section class="video">
-    <img src="https://i.ytimg.com/vi/3XU6NEsukQ4/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBhOyvI8DhyJ-naoSxqxKYDiWtSqg" />
-    <!-- <video /> -->
+    <video src="video.mp4" />
   </section>
 
-  <section class="video_info">
-    <div class="hashtag">
-      <span>#너무좋아</span>
-      <span>#하트시그널</span>
-      <span>#하트시그널2</span>
-    </div>
+  <section class="infoAndList">
+    <section class="flex">
+      <!-- 비디오 정보 -->
+      <section class="video_info">
+        <div class="hashtag">
+          <span>#너무좋아</span>
+          <span>#하트시그널</span>
+          <span>#하트시그널2</span>
+        </div>
 
-    <div class="title_container">
-      <div class="title">
-        <p>하트시그널 시즌2 9회 - 임현주와 송다은의 비밀 데이트 | 다시보기 Full VOD 공개 HEART SIGNAL Season 2 |   또봐요_ㄸㅗㅂAYO | AYO 에이요</p>
-        <button><i class="fas fa-caret-down"></i></button>
-      </div>
-      <p class="viewers">조회수 217만회</p>
-    </div>
+        <div class="title_container">
+          <div class="title">
+            <span class="text">하트시그널 시즌2 9회 - 임현주와 송다은의 비밀 데이트 | 다시보기 Full VOD 공개 HEART SIGNAL Season 2 | 또봐요_ㄸㅗㅂAYO |
+              AYO
+              에이요</span>
+            <button><i class="fas fa-caret-down"></i></button>
+          </div>
+          <span class="viewers">조회수 217만회</span>
+        </div>
 
-    <ul class="icon_list">
-      <li class="icon_item">
-        <button><i class="far fa-thumbs-up"></i></button>
-        <span class="text">1K</span>
+        <ul class="icon_list">
+          <li class="icon_item">
+            <button><i class="far fa-thumbs-up"></i></button>
+            <span class="text">1K</span>
+          </li>
+          <li class="icon_item">
+            <button><i class="far fa-thumbs-down"></i></button>
+            <span class="text">0</span>
+          </li>
+          <li class="icon_item">
+            <button><i class="fas fa-share"></i></button>
+            <span class="text">공유</span>
+          </li>
+          <li class="icon_item">
+            <button><i class="fas fa-plus"></i></button>
+            <span class="text">저장</span>
+          </li>
+          <li class="icon_item">
+            <button><i class="fas fa-flag"></i></button>
+            <span class="text">신고</span>
+          </li>
+        </ul>
+      </section>
+
+
+      <!-- 비디오 소유자 -->
+      <section class="video_owner">
+        <div class="user_info">
+          <img src="https://yt3.ggpht.com/ytc/AKedOLQIIvHXoBL9_HfJTbTygWwdyC5sPzn0VpO2FbIX=s48-c-k-c0x00ffffff-no-rj" />
+          <div class="meta">
+            <span class="user">에이요</span>
+            <span class="subscribe">구독자 17.6만명</span>
+          </div>
+        </div>
+        <button class="subscribe_btn">subscribe</button>
+      </section>
+    </section>
+
+
+    <!-- 다음 동영상 -->
+    <ul class="video_list">
+      <span class="text">다음 동영상</span>
+      <li class="video_item">
+        <div class="item">
+          <img
+            src="https://i.ytimg.com/vi/W_MUcyXz3r4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCWCTviRCQV_tFHb-55co6djjbF6g" />
+        </div>
+        <div class="video_info">
+          <span class="title">하트시그널 다시보기하트시그널 다시보기하트시그널 다시보기</span>
+          <span class="owner">에이요</span>
+          <span class="viewers">19만</span>
+        </div>
+        <button class="more">
+          <i class="fas fa-ellipsis-v"></i>
+        </button>
       </li>
-      <li class="icon_item">
-        <button><i class="far fa-thumbs-down"></i></button>
-        <span class="text">0</span>
+      <li class="video_item">
+        <div class="item">
+          <img
+            src="https://i.ytimg.com/vi/W_MUcyXz3r4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCWCTviRCQV_tFHb-55co6djjbF6g" />
+        </div>
+        <div class="video_info">
+          <span class="title">하트시그널 다시보기하트시그널 다시보기하트시그널 다시보기</span>
+          <span class="owner">에이요</span>
+          <span class="viewers">19만</span>
+        </div>
+        <button class="more">
+          <i class="fas fa-ellipsis-v"></i>
+        </button>
       </li>
-      <li class="icon_item">
-        <button><i class="fas fa-share"></i></button>
-        <span class="text">공유</span>
+      <li class="video_item">
+        <div class="item">
+          <img
+            src="https://i.ytimg.com/vi/W_MUcyXz3r4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCWCTviRCQV_tFHb-55co6djjbF6g" />
+        </div>
+        <div class="video_info">
+          <span class="title">하트시그널 다시보기하트시그널 다시보기하트시그널 다시보기</span>
+          <span class="owner">에이요</span>
+          <span class="viewers">19만</span>
+        </div>
+        <button class="more">
+          <i class="fas fa-ellipsis-v"></i>
+        </button>
       </li>
-      <li class="icon_item">
-        <button><i class="fas fa-plus"></i></button>
-        <span class="text">저장</span>
+      <li class="video_item">
+        <div class="item">
+          <img
+            src="https://i.ytimg.com/vi/W_MUcyXz3r4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCWCTviRCQV_tFHb-55co6djjbF6g" />
+        </div>
+        <div class="video_info">
+          <span class="title">하트시그널 다시보기하트시그널 다시보기하트시그널 다시보기</span>
+          <span class="owner">에이요</span>
+          <span class="viewers">19만</span>
+        </div>
+        <button class="more">
+          <i class="fas fa-ellipsis-v"></i>
+        </button>
       </li>
-      <li class="icon_item">
-        <button><i class="fas fa-flag"></i></button>
-        <span class="text">신고</span>
+      <li class="video_item">
+        <div class="item">
+          <img
+            src="https://i.ytimg.com/vi/W_MUcyXz3r4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCWCTviRCQV_tFHb-55co6djjbF6g" />
+        </div>
+        <div class="video_info">
+          <span class="title">하트시그널 다시보기하트시그널 다시보기하트시그널 다시보기</span>
+          <span class="owner">에이요</span>
+          <span class="viewers">19만</span>
+        </div>
+        <button class="more">
+          <i class="fas fa-ellipsis-v"></i>
+        </button>
       </li>
     </ul>
   </section>
 
-  <section class="video_owner">
-    <div class="avatar">
-      <img src="https://yt3.ggpht.com/ytc/AKedOLQIIvHXoBL9_HfJTbTygWwdyC5sPzn0VpO2FbIX=s48-c-k-c0x00ffffff-no-rj" />
-    </div>
-    <div class="user_info">
-      <p class="user">에이요</p>
-      <p class="subscribe">구독자 17.6만명</p>
-    </div>
-    <button class="subscribe_btn">subscribe</button>
-  </section>
 
-  <ul class="video_list">
-    <p class="text">다음 동영상</p>
-    <li class="video_item">
-      <img src="https://i.ytimg.com/vi/W_MUcyXz3r4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCWCTviRCQV_tFHb-55co6djjbF6g" />
-      <div class="video_info">
-        <p class="title">하트시그널 다시보기하트시그널 다시보기하트시그널 다시보기</p>
-        <p class="owner">에이요</p>
-        <p class="viewers">19만</p>
-      </div>
-      <button class="more">
-        <i class="fas fa-ellipsis-v"></i>
-      </button>
-    </li>
-    <li class="video_item">
-      <img src="https://i.ytimg.com/vi/W_MUcyXz3r4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCWCTviRCQV_tFHb-55co6djjbF6g" />
-      <div class="video_info">
-        <p class="title">ㄷㅏ시보기</p>
-        <p class="owner">에이요</p>
-        <p class="viewers">19만</p>
-      </div>
-      <button class="more">
-        <i class="fas fa-ellipsis-v"></i>
-      </button>
-    </li>
-    <li class="video_item">
-      <img src="https://i.ytimg.com/vi/W_MUcyXz3r4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCWCTviRCQV_tFHb-55co6djjbF6g" />
-      <div class="video_info">
-        <p class="title">하트시그널 다시보기하트시그널 다시보기하트시그널 다시보기</p>
-        <p class="owner">에이요</p>
-        <p class="viewers">19만</p>
-      </div>
-      <button class="more">
-        <i class="fas fa-ellipsis-v"></i>
-      </button>
-    </li>
-    <li class="video_item">
-      <img src="https://i.ytimg.com/vi/W_MUcyXz3r4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCWCTviRCQV_tFHb-55co6djjbF6g" />
-      <div class="video_info">
-        <p class="title">하트시그널 다시보기하트시그널 다시보기하트시그널 다시보기하트시그널 다시보기</p>
-        <p class="owner">에이요</p>
-        <p class="viewers">19만</p>
-      </div>
-      <button class="more">
-        <i class="fas fa-ellipsis-v"></i>
-      </button>
-    </li>
-    <li class="video_item">
-      <img src="https://i.ytimg.com/vi/W_MUcyXz3r4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCWCTviRCQV_tFHb-55co6djjbF6g" />
-      <div class="video_info">
-        <p class="title">하트시그널 다시보기하트시그널 다시보기하트시그널 다시보기</p>
-        <p class="owner">에이요</p>
-        <p class="viewers">19만</p>
-      </div>
-      <button class="more">
-        <i class="fas fa-ellipsis-v"></i>
-      </button>
-    </li>
-  </ul>
 </body>
+
 </html>
